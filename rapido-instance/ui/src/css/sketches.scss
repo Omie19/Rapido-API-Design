@@ -1,0 +1,1831 @@
+    .sketch-component-wrapper {
+        .sketch-found-section {
+            padding: 0 40px;
+        }
+        .sketch-sort-section {
+            padding: 30px 5px 15px 5px;
+            button {
+                float: right;
+                margin-left: 10px;
+            }
+        }
+        .new-sketch-label {
+            float: right;
+            position: absolute;
+            top: -50px;
+            right: 2%;
+        }
+        .project-list-wrapper {
+            .search-sketch {
+                display: inline-block;
+            }
+            table {
+                margin-top: 30px;
+                th,
+                td {
+                    padding: 10px 50px;
+                }
+                tr {
+                    border-bottom: 1px solid #ccc;
+                    td {
+                        cursor: pointer;
+                    }
+                }
+                tr:first-child {
+                    border-top: 0;
+                }
+                .list-even-row {
+                    background: white;
+                }
+                .list-odd-row {
+                    background: rgba(245, 245, 245, 0.68);
+                }
+            }
+            select {
+                display: none;
+            }
+        }
+    }
+    
+    .sketch-label {
+        padding-top: 20px;
+        margin: 0;
+        border-top: 1px solid #ccc;
+    }
+    
+    .save-sketch-section {
+        padding-top: 15px;
+        .remove {
+            cursor: pointer;
+        }
+    }
+    
+    .project-details {
+        padding: 30px 15px;
+        span.inactive-desc {
+            border-bottom: 1px solid #ccc;
+            opacity: 0.5
+        }
+        span.inactive-name {
+            border-bottom: 1px solid #ccc;
+            opacity: 0.5
+        }
+        span.inactive-name:after {
+            color: red;
+            content: "*";
+        }
+        input {
+            border: 0;
+            height: 25px;
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    
+    .project-details.description {
+        span {
+            height: 25px;
+            padding-right: 15px;
+            width: 100%;
+        }
+    }
+    
+    .project-details.name {
+        span {
+            width: 50%;
+        }
+        input {
+            width: 50%;
+        }
+        span.error {
+            width: 50%;
+            border-bottom: 1px solid red;
+        }
+    }
+    
+    .node-details-section {
+        padding-bottom: 30px;
+        .child-node-edit-section,
+        .parent-node-edit-section {
+            padding-bottom: 50px;
+            border-top: 1px solid #ccc;
+            padding-top: 30px;
+        }
+        .child-node-edit-section {
+            .path-section {
+                margin-bottom: 10px;
+                @media(min-width: 992px) {
+                    padding-right: 0;
+                }
+            }
+            .get-parameters {
+                margin-bottom: 10px;
+            }
+            .payload-type-section {
+                margin: 10px 0;
+                .summary-section {
+                    @media(min-width: 992px) {
+                        padding-right: 0;
+                    }
+                    textarea {
+                        border-color: #ccc;
+                        width: 100%
+                    }
+                }
+            }
+            .param-label {
+                padding: 0
+            }
+            .ace-editor-wrapper {
+                border: 1px solid #ccc;
+                padding: 0;
+            }
+            .ace-sample-wrapper {
+                color: #a94442;
+            }
+            .ace-sample-wrapper.visible-sm {
+                margin-top: 15px;
+                padding: 0;
+            }
+        }
+        .associate-section {
+            padding-top: 5px;
+        }
+    }
+    
+    .no-sketch-section {
+        height: 400px;
+        padding-top: 200px;
+        font-size: 24px;
+    }
+    
+    .loading-project-details {
+        height: 200px;
+        padding-top: 100px;
+    }
+    
+    .Select-clear-zone {
+        display: none;
+    }
+    
+    .Select-menu-outer {
+        z-index: 1000;
+    }
+    
+    .vocabulary-wrapper {
+        height: 150px;
+        padding-top: 100px;
+        input {
+            width: 100%;
+            height: 40px;
+            padding-left: 15px;
+        }
+        button {
+            height: 40px;
+        }
+        select {
+            display: none;
+        }
+        .vocabulary-list {
+            table {
+                margin-top: 30px;
+                th,
+                td {
+                    padding: 10px 30px;
+                }
+                tr {
+                    border-bottom: 1px solid #ccc;
+                    td {
+                        cursor: pointer;
+                    }
+                }
+                tr:first-child {
+                    border-top: 0;
+                }
+                .list-even-row {
+                    background: white;
+                }
+                .list-odd-row {
+                    background: rgba(245, 245, 245, 0.68);
+                }
+            }
+        }
+    }
+    
+    .suggestion-section {
+        ul {
+            list-style-type: none;
+        }
+    }
+    
+    .vocabulary-suggest {
+        padding: 0;
+        input {
+            border-color: #ccc !important;
+            width: 100%;
+        }
+    }
+    
+    .delete-modal {
+        .delete-message-label {
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        .cancel-button {
+            margin-right: 10px;
+        }
+    }
+    .pushToGithub
+    {
+        .cancel-button {
+            margin-right: 10px;
+        }
+    }
+    .create-project-section {
+        padding-top: 50px;
+		padding-left: 30px;
+        /* height: 400px;*/
+        .next-section {
+            margin-top: 20px;
+            margin-right: 10px;
+            button {
+                width: 80px;
+            }
+        }
+    }
+    
+    .title-section {
+        @media(min-width: 992px) {
+            padding-right: 0;
+        }
+        input {
+            padding: 6px 12px;
+            font-family: Helvetica, sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+    }
+    
+    .sketch-card {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        background: white;
+        float: left;
+        width: 30%;
+        position: relative;
+        box-sizing: border-box;
+        min-height: 1px;
+        margin-left: 1.65%;
+        margin-right: 1.65%;
+        margin-bottom: 40px;
+        .header {
+            padding: 15px 5px;
+            border-bottom: 1px solid #d8d8d8;
+            margin: 0px 12px;
+            .name {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+        .body {
+            padding: 15px;
+            .description {
+                font-size: 14px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+    
+    .titleContainer {
+        position: relative;
+        overflow: hidden;
+        padding: 55px 50px 0px;
+        h2,
+        h3 {
+            font-weight: 300;
+            color: #48575F;
+            font-size: 25px;
+            line-height: 25px;
+            font-weight: 300;
+        }
+        h3 {
+            font-size: 18px;
+        }
+    }
+    
+    .personalSketchesCont,
+    .teamSketchesCont {
+        margin: auto;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        clear: both;
+        float: left;
+        .mainContainer {
+            margin: 30px 0;
+            clear: both;
+            float: left;
+            .personalImg {
+                width: 48px;
+                height: 48px;
+                margin-right: 10px;
+            }
+            .teamImg {
+                width: 48px;
+                height: 48px;
+                margin-right: 10px;
+            }
+        }
+        .btn {
+            padding: 7px 5px;
+            border-radius: 0;
+            margin-left: 30px;
+        }
+    }
+    
+    .search-sketch-input {
+        float: left;
+        padding: 5px;
+        border: 0;
+        border-bottom: 1px solid #09AEEF;
+        background: #f7f7f7;
+        width: 150px;
+    }
+    
+    .tabs {
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        .tab {
+            float: left;
+            margin-right: 30px;
+            border: 5px solid transparent;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            cursor: pointer;
+            padding-bottom: 10px;
+            .tab-link {
+                color: #337099;
+                text-decoration: none;
+            }
+        }
+        .active-tab {
+            border-color: #62C6E5;
+        }
+    }
+    
+    .tabs-active-content {
+        margin-top: 30px;
+    }
+    
+    .tabsContainer {
+        padding: 0 35px;
+    }
+    
+    .sketchPage {
+        padding-bottom: 30px;
+    }
+    
+    .profile-section {
+        margin-top: 30px;
+    }
+    
+    .sortByBtn {
+        background: none;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        padding: 5px;
+    }
+    
+    .sortByBtn.active {
+        border-bottom: 4px solid #09AEEF;
+    }
+    /* New sketches Css */
+    
+    .new-sketch-containter {
+        padding-top: 20px
+    }
+    
+    .sketches-rectangle {
+        width: 98%;
+        height: 9%;
+        border-radius: 5px;
+        background-color: #4a90e2;
+        padding-top: 15px;
+    }
+    
+    .sketches-search-text {
+        font-family: Helvetica;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        padding-left: 0px;
+    }
+    
+    .team-search-text {
+        font-family: Helvetica;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        padding-left: 10px;
+    }
+    
+    .new-sketch {
+        width: 105px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+    
+    .new-sketch-text {
+        cursor: pointer;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #4a90e2;
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+    
+    .button-inline {
+        list-style-type: none;
+        margin-left: -6%;
+        float: left;
+    }
+    
+    .button-inline li {
+        float: left;
+    }
+    
+    .search-textbox {
+        width: 250px;
+        height: 30px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #9b9b9b;
+        border: solid 1px #d6d6d6;
+    }
+    
+    .search-shape {
+        width: 14px;
+        height: 14px;
+        object-fit: contain;
+        background-color: #ffffff;
+    }
+    
+    .team-search-bar {
+        height: 54px;
+        border-radius: 5px;
+        background-color: #89baf4;
+        padding-top: 15px;
+    }
+    
+    .new-team-button {
+        width: 95px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #ffffff;
+    }
+    
+    .new-team-text {
+        height: 17px;
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.1;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+        white-space: nowrap;
+    }
+    
+    .card-title+div,
+    .normal-font {
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+    }
+    
+    .bold-font {
+        font-family: Helvetica;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+    }
+    
+    .card-title h4,
+    .grey-text {
+        font-family: Helvetica;
+        font-size: 10px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #9b9b9b;
+        z-index: 10;
+    }
+    
+    .card-title h3 {
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a90e2;
+    }
+    /* .card-title h3:hover,
+    .card-layout :hover .card-title h3 {
+        color: #ffffff;
+    }*/
+    
+    .card-title+div+div {
+        background-color: white;
+        border-top: none;
+        border-left: inherit;
+        border-right: inherit;
+        padding-bottom: 5px;
+        box-shadow: none;
+    }
+    
+    .red-status {
+        width: 54px;
+        height: 16px;
+        border-radius: 4px;
+        background-color: #ef7745;
+        font-family: Helvetica;
+        font-size: 10px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: white;
+        padding: 5px;
+    }
+    
+    .green-status {
+        width: 54px;
+        height: 16px;
+        border-radius: 4px;
+        background-color: #7ed321;
+        font-family: Helvetica;
+        font-size: 10px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: white;
+        padding: 5px;
+    }
+    
+    .wrapper {
+        position: relative;
+        z-index: 10;
+    }
+    
+    .wrapper-icon {
+        position: absolute;
+        top: -7px;
+        left: 76px;
+        display: none;
+        z-index: 10;
+    }
+   
+    /*
+    .wrapper-oval {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 40px;
+        padding: 12px;
+        margin-right: 10px;
+        z-index: 10;
+        opacity: 1;
+        cursor: pointer;
+    }
+    */
+
+    .edit-wrapper-oval {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 40px;
+        padding: 12px;
+        margin-right: 10px;
+        z-index: 10;
+        opacity: 1;
+        cursor: pointer;
+        padding-left: 11px;
+        padding-right: 11px;
+    }   
+    
+    .delete-wrapper-oval {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 40px;
+        padding: 12px;
+        margin-right: 10px;
+        z-index: 10;
+        opacity: 1;
+        cursor: pointer;
+    }   
+
+    .forward-wrapper-oval {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 40px;
+        padding: 12px;
+        margin-right: 10px;
+        z-index: 10;
+        opacity: 1;
+        cursor: pointer;
+        padding-left: 10px;
+        padding-right: 10px;
+    }   
+
+    .card-layout {
+        cursor: pointer;
+        padding-top: 10px;
+    }
+    
+    .card-layout div:hover {
+        opacity: 1;
+        border-radius: 5px;
+        background-color: #89baf4
+    }
+    
+    .card-layout:hover .wrapper-icon {
+        display: inline-block;
+    }
+    
+    .card-layout:hover .wrapper-oval {
+        background-color: #fff;
+    }
+    
+    .wrapper:hover {
+        background-color: #fff;
+        z-index: 10;
+    }
+    
+    .make-height-invisible {
+        height: 0px;
+    }
+    
+    .view-text {
+        margin-left: -10px;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+    }
+    
+    .custom-select {
+        width: 92px;
+        height: 26px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        border: solid 1px #d6d6d6;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+        outline: none
+    }
+    
+    .custom-select-option {
+        width: 92px !important;
+        height: 22px !important;
+        border-radius: 3px !important;
+        background-color: white !important;
+        border: solid 1px #d6d6d6 !important;
+        font-family: Helvetica !important;
+        font-size: 12px !important;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+        outline: none;
+    }
+
+    .xs-pl-20 {
+        padding-left: 20px; 
+    }
+
+    .xs-pl-8 {
+        padding-left: 8px;
+    }
+    
+    .xs-pl-5 {
+        padding-left: 5px;
+    }
+    
+    .xs-pl-30 {
+        padding-left: 30px;
+    }
+    
+    .xs-pl-10 {
+        padding-left: 10px;
+    }
+    
+    .xs-pt-5 {
+        padding-top: 5px;
+    }
+    
+    .activeButton {
+        border-radius: 3px;
+        background-color: #4a90e2;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        cursor: pointer;
+        height: 26px;
+        width: 52px;
+    }
+
+    .activeButton:hover {
+        border-radius: 3px;
+        background-color: #4a90e2;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        cursor: pointer;
+        height: 26px;
+        width: 52px;
+    }
+
+    .activeButton:active {
+        border-radius: 3px;
+        background-color: #4a90e2;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        cursor: pointer;
+        height: 26px;
+        width: 52px;
+    }
+    
+    .inactiveButton {
+        border-radius: 3px;
+        background-color: #ffffff;
+        border: solid 1px #d6d6d6;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+        cursor: pointer;
+        height: 26px;
+        width: 52px;
+    }
+    
+    .xs-pl-15 {
+        padding-left: 15px;
+    }
+    
+    .anchor-tag {
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a90e2;
+
+        a:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    .anchor-tag-addparams {
+        width: 56px;
+        height: 12px;
+        font-family: Helvetica;
+        font-size: 10px;        
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a90e2; 
+        text-decoration: underline;
+
+        a:hover {
+            color: #4a90e2;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    
+    .add-params-div {
+        margin-top:8px;
+    }
+
+    .add-params {
+        width: 12px;
+        margin-right: 5px;
+    }
+
+    .add-prams-section {
+        width: 366px;
+        height: 149px;
+        border-radius: 5px;
+        background-color: #f4f4f4;
+        border: solid 1px #cfcfcf;
+    }
+
+    .params-div {
+        height: 35px;
+        border-bottom: solid 1px #cfcfcf;
+    }
+
+    .params-text {
+        margin: 12px;
+        font-family: Helvetica;
+        font-size: 10px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+    }
+
+    .params-value {
+        margin-left: 80px;
+        font-family: Helvetica;
+        font-size: 10px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+    }
+
+    .key-input {
+        margin-left: 10px;
+        margin-top: 3.5px;
+        display: inline-block;
+        width: 108px;
+        height: 27px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: solid 1px #cfcfcf;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+    }
+
+    .value-input {
+        display: inline-block;
+        margin-top: 3.5px;
+        margin-left: 7px;
+        width: 180px;
+        height: 27px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: solid 1px #cfcfcf; 
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+    }
+
+    .node-summary-div {
+        margin-top: 25px;
+    }
+
+    .displayNone {
+        display: none;
+        cursor: pointer;
+    }
+    
+    .displayBlock {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .visible {
+        visibility: visible;
+    }
+    
+    .hidden {
+        visibility: hidden
+    }
+    
+    .cursor {
+        cursor: pointer;
+    }
+    
+    .sketches-text {
+        margin-left: 4px;
+        font-family: Helvetica;
+        font-size: 28px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+        padding-left: 0px; 
+    }
+    
+    .border-bottom {
+        border-bottom: 1px solid #d4d4d4;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    
+    .xs-pr-15 {
+        padding-right: 15px;
+    }
+    
+    .temp {
+        background-color: #4a90e2;
+        margin-top: 15px;
+        margin-left: 0.5%;
+        margin-bottom: -17px;
+    }
+    
+    .button-section {
+        margin-right: -3.2%;
+        margin-top: 10px;
+    }
+    
+    .sketch-border {
+        border-bottom: 1px solid #d4d4d4;
+    }
+    
+    .sketch-header {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-left: 4.3%;
+    }
+    
+    .Sketch-Name {
+        width: 73px;
+        height: 14px;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+    }
+    
+    .Rectangle-5 {
+        width: 506px !important;
+        height: 30px !important;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: solid 1px #cfcfcf;
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+        padding-left: 10px;
+    }
+    
+    .Description {
+        width: 61px;
+        height: 14px;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+    }
+    
+    .Rectangle-5-Copy {
+        width: 506px;
+        /*height: 150px;*/
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: solid 1px #cfcfcf;
+        font-family: Helvetica;
+        font-size: 14px !important;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a
+    }
+    
+    .Rectangle-5-Copy textarea {
+        font-family: Helvetica;
+        font-size: 14px !important;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+        margin-left: -1%;
+        margin-right: -2%
+    }
+    
+    .Rectangle-4-Copy-6 {
+        margin-right: 5px;
+        width: 82px;
+        height: 30px;
+        border: none;
+        /* margin-left: 55%; */
+        background-color: transparent;
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+    }
+    
+    .Cancel {
+        width: 44px;
+        height: 17px;
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+    }
+    
+    .Rectangle-4-Copy-7 {
+        width: 82px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #4a90e2;
+        margin-right: 14px;
+    }
+    
+    .Rectangle-4-Copy-7:hover {
+        width: 82px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #4a90e2;
+        margin-right: 14px;
+    }
+    
+    .Proceed {
+        width: 57px;
+        height: 17px;
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        top: 3px;
+        color: #ffffff;
+    }
+    
+    .Rectangle-5-Copy-3 {
+        width: 86px;
+        height: 23px;
+        border-radius: 18px;
+        background-color: #4a90e2;
+    }
+    
+    .Personal {
+        width: 48px;
+        height: 14px;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+    
+    .Rectangle-5-Copy-2 {
+        width: 166px;
+        height: 23px;
+        border-radius: 18px;
+        background-color: #ffffff;
+        border: solid 1px #cfcfcf;
+    }
+    
+    .Shared {
+        width: 39px;
+        height: 14px;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+    }
+    
+    .Rectangle-8-Copy {
+        width: 274px;
+        min-height: 800px;
+        background-color: #ffffff;
+        border-left: 3px solid #d8d8d8;
+        height: 100%;
+        overflow: hidden;
+        /*cursor: col-resize;*/
+        padding-left: 20px;
+    }
+    
+    shared-section {
+        display: none;
+    }
+    
+    .vocabulary-header-title {
+        margin-left: -10px;
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+    }
+    
+    .vocabulary-header-shared {
+        font-family: Helvetica;
+        font-size: 10px;
+        font-weight: normal;
+        font-style: oblique;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #9b9b9b;
+    }
+    
+    .vocabulary-main-content {
+        min-height: 600px
+    }
+    
+    .vocabulary-button-preview {
+        cursor: pointer;
+        height: 24px;
+        border-radius: 5px;
+        background-color: #4a90e2;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+    
+    .vocabulary-button-version {
+        cursor: pointer;
+        height: 24px;
+        border-radius: 5px;
+        background-color: #fff;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+        border-color: #cfcfcf;
+    }
+    
+    .vocabulary-button-version:hover {
+        cursor: pointer;
+        height: 24px;
+        border-radius: 5px;
+        background-color: #fff;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+        border-color: #cfcfcf;
+    }
+    
+    .vocabulary-header {
+        height: 60px;
+        border-bottom: 1px solid #cfcfcf;
+    }
+    
+    .vocabulary-panel {
+        background-color: #ffffff;
+        min-height: 800px;
+        height: 100%;
+        border-right: 1px solid #cfcfcf;
+        height: 100%;
+    }
+    
+    .vocabulary-text {
+        height: 30px;
+        padding: 6px;
+        padding-left: 36px;
+        border-bottom: 1px solid #cfcfcf;
+        padding-top: 7px
+    }
+    
+    .xs-pt-10 {
+        padding-top: 10px;
+    }
+    
+    .vocabulary-icon {
+        font-size: 15px;
+        color: #4a90e2;
+        cursor: pointer;
+    }
+    
+    .vocabulary-textbox {
+        background-color: #ffffff;
+        width: 126px;
+        z-index: 10;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+        height: 30px;
+        border-color: 1px solid #cfcfcf;
+        border-radius: 5px;
+    }
+    
+    .vocabulary-plus-icon {
+        color: #4a90e2;
+        width:16px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    .vocabulary-show-hide {
+        background-color: #4a90e2;
+        margin-left: -27px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 2px;
+        padding-right: 1px;
+        margin-right: 10px;
+    }
+
+    .vocabulary-closed-panel {
+        height: 30px;
+        padding-left: 36px;
+        border-bottom: 1px solid #cfcfcf;
+        padding-top: 7px;
+        margin-left: -10px;
+    }
+    
+    .vocab-arrow {
+        cursor: pointer;
+    }
+
+    .Node-Properties {
+        margin-top: 5px;
+        width: 109px;
+        height: 17px;
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+    }
+    
+    .ROOT-NAME {
+        width: 73px;
+        height: 14px;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #9b9b9b;
+    }
+    
+    .Rectangle-5-copy-4 {
+        width: 246px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: solid 1px #cfcfcf;
+    }
+    
+    .ROOT-PATH {
+        width: 69px;
+        height: 14px;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #9b9b9b;
+    }
+    
+    .Rectangle-5-Copy-2 {
+        width: 246px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: solid 1px #cfcfcf;
+    }
+    
+    .Cancel {
+        width: 72px;
+        height: 30px;
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+        background-color: transparent;
+        border: none;
+        margin-right: 2px;
+    }
+    
+    .UPDATE {
+        width: 72px;
+        height: 30px;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        border-radius: 5px;
+        background-color: #4a90e2;
+    }
+    
+    .Rectangle-5-Copy-3 {
+        width: 72px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #4a90e2;
+    }
+    
+    .Rectangle-8-Copy-screen-2 {
+        width: 400px;
+        min-height: 500px;
+        background-color: #ffffff;
+        border-left: 4px solid #d8d8d8;
+    }
+    
+    .main-content-padding {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .main-sidebar-content {        
+        border-right: solid 1px #d6d6d6;
+        height: 100%;
+    } 
+
+    .active-box {
+        width: 89px;
+        height: 89px;
+        border-radius: 5px;
+        background-color: #4a90e2;       
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding: 13px;
+        text-align: center;
+        color: #ffffff;
+      }
+
+    .inactive-box {
+        width: 89px;
+        height: 89px;
+        border-radius: 5px;
+        background-color: #dadada;        
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding: 13px;
+        text-align: center;
+    }
+
+    .active-content-text {
+        width: 65px;
+        height: 14px;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;        
+    }
+
+    .inactive-content-text {
+        width: 42px;
+        height: 14px;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+    }
+    
+    .active-content-count {
+        width: 45px;
+        height: 48px;
+        font-family: Helvetica;
+        font-size: 40px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;        
+    }
+
+    .inactive-content-count {
+        width: 23px;
+        height: 48px;
+        font-family: Helvetica;
+        font-size: 40px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+    }
+
+    .sketch-header-padding {
+        padding-left: 14px;
+    }
+    
+    .xs-p-0 {
+        padding: 0px;
+    }
+
+    .xs-pl-35 {
+        padding-left: 35px;
+    }
+    
+    .sketch-content {
+        margin-left: 0px;
+    }
+    
+    .shared-sketch {
+        padding-bottom: 50px;
+        margin-left: 0px;
+    }
+    
+    .Request-Type {
+        width: 200px;
+        height: 14px;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #9b9b9b;
+    }
+    
+    .url-text-wrapper {
+        width: 260px;
+    }
+    
+    .bitmap-img {
+        width: 10px;
+        display: inline-block;
+    }
+    
+    .url-text {
+        width: 230px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        /* border: solid 1px #cfcfcf;*/
+        display: inline-block;
+    }
+    
+    .Rectangle-5-Copy-8 {
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: solid 1px #cfcfcf;
+    }
+    
+    .summary {
+        width: 52px;
+        height: 14px;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #9b9b9b;
+    }
+    
+    .Rectangle-5-Copy-7 {
+        /*width: 270px;*/
+        height: 50px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: solid 1px #cfcfcf;
+    }
+    
+    .Request-Params {
+        width: 156px;
+        height: 14px;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #9b9b9b;
+    }
+    
+    .Response-Applicati {
+        width: 158px;
+        height: 14px;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #9b9b9b;
+    }
+    
+    .Rectangle-5-Copy-9 {
+        width: 270px;
+        height: 195px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: solid 1px #cfcfcf;
+        border-left: 10px solid #e6e6e6;
+    }
+    
+    .Rectangle-5-Copy-10 {
+        height: 25px;
+    }
+    
+    .sort {
+        padding-right: 0px;
+        margin-right: -1.2%;
+    }
+    
+    .url {
+        width: 30px;
+        height: 14px;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #9b9b9b;
+    }
+    
+    .edit-sketch-info-wrapper {
+        height: 30px;
+        border-left: 1px solid #d8d8d8;
+    }
+    
+    .edit-sketch-info-wrapper div {
+        margin-top: 7px;
+    }
+    
+    .edit-sketch-info {
+        height: 20px;
+        margin-left: 20px;
+        padding-top: 0.95%;
+        font-family: Helvetica;
+        font-size: 10px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a90e2;
+        cursor: pointer;
+      }
+
+    .sketch-desc-view {
+        margin-top: -0.8%;
+    }
+    
+    .card-block {
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: solid 1px #d6d6d6;
+        box-shadow: none;
+        width: 265px;
+        height: 100px;
+    }
+    
+    .wrapper-info {
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        margin-left: 2.2%;
+    }
+    
+    .xs-pr-5 {
+        padding-right: 5px;
+    }
+    
+    .filter-icon {
+        cursor: pointer;
+        margin-right: 15px;
+    }
+    
+    .Hello {
+        width: 26px;
+        height: 12px;
+        font-family: Helvetica;
+        font-size: 10px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+    }
+    
+    .edit-sketch-header {
+        margin-top: 12px;
+    }
+
+    .noResultsFound h2{
+        margin-top: -30px;
+    }
+
+    

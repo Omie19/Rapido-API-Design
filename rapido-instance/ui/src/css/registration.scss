@@ -1,0 +1,18 @@
+.registration-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .create-account-form {
+    padding: 30px 30px 30px 30px;
+    box-shadow: 0 0 2px 1px grey;
+    .registration-options {
+      margin: 0 auto;
+      text-align: center;
+      .register-button {
+        margin-right: 5px;
+      }
+      .cancel-button {
+        margin-left: 5px;
+      }
+    }
+  }
+}

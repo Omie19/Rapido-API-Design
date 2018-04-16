@@ -1,0 +1,36 @@
+version: '2'
+services:
+    rapido-db:
+        image: isl-dsdc.ca.com:5000/apim-solutions/rapido-db
+        container_name:   rapido-db
+        cpu_shares:       85
+        mem_limit:        1g
+        memswap_limit:    2g
+
+    rapido-instance:
+        image: isl-dsdc.ca.com:5000/apim-solutions/rapido-instance
+        container_name: rapido-instance
+        ports:
+            - "9001:9001"
+        environment:
+            - ENV_TYPE
+            - LISTEN_PORT
+            - DB_POOL_MAX
+            - DB_POOL_MIN
+            - DB_DEBUG
+            - DB_HOST=rapido-db
+            - DB_PORT
+            - DB_USER
+            - DB_SCHEMA
+            - DB_PASSWORD
+            - LOG_LEVEL
+            - EMAIL_FROM
+            - EMAIL_USER
+            - EMAIL_PASSWORD
+            - JWT_SECRET
+            - JWT_EXPIRY
+        links:
+           - rapido-db
+        cpu_shares:     85
+        mem_limit:      1g
+        memswap_limit:  2g

@@ -1,0 +1,372 @@
+@import './header';
+@import './login';
+@import './app';
+@import './registration';
+@import './sketches';
+@import './tree';
+@import './export';
+@import './404page';
+
+body {
+    font-weight: 200;
+    font-family: ca-sans-light, "Helvetica Neue", helvetica, arial, verdana, sans-serif !important;
+    font-size: 16px;
+    line-height: 1.15;
+    color: #58676D;
+    background: #f7f7f7;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.registration-options {
+	margin-bottom: 50px;
+}
+
+.mail-verification-container {
+	padding-top: 100px;
+    height: 600px;	
+}
+
+.mail-verification-main {
+	padding: 50px 30px 50px 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    color: #677B87;
+}
+
+.rapido-button {
+	border: 2px solid #09AEEF;
+    background: #09AEEF;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 10px 10px;
+    line-height: 1;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.sketch-hover-card {
+    display: none;
+    position: absolute;
+    background: #ccc;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    height: 95px;
+    z-index:0;
+    .del-btn {
+        position: relative;
+        top: 32px;
+        left: 130px;
+    }
+    .det-btn {
+        position: relative;
+        top: 32px;
+        left: 145px;
+    }
+}
+
+.sketch-card:hover .sketch-hover-card {
+    display: block;
+}
+
+.profile-header-text {
+    border-bottom: 1px solid;
+    padding: 10px 20px;
+    font-weight: 200;
+    font-size: 20px;
+    margin-bottom: 30px;
+    display:block;
+}
+
+.reset-button {
+    margin-bottom: 10px;
+}
+
+.home-page-main-section {
+    margin-top: 15px;
+}
+
+.home-page-section-one, .home-page-section-two {
+    text-align:center;
+}
+
+.home-page-section-one-span {
+    padding: 130px 0;
+    display: inline-block;
+    width: 100%;
+    background: #84d6f7;
+    font-size: 26px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.home-page-section-one-span button {
+    margin: 0 300px;
+    margin-top: 20px;
+    border: none;
+    color: #84d6f7;
+    background: #fff;
+}
+
+.feature-list-item {
+    padding: 90px 0 55px;
+    flex-direction: row;
+    display: flex;
+    margin: 0;
+    position: relative;
+}
+
+.feature-list-item-image {
+    text-align: center;
+    width: 100%;
+}
+
+.feature-list-item-image img {
+    vertical-align: middle;
+    border: 0;
+    max-width: 100%;
+}
+
+.feature-list-item-text {
+    margin-left: 60px;
+    width: 100%;
+}
+
+.feature-list-item-text h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 32px;
+    font-size: 24px;
+    text-align: left;
+}
+
+.feature-list-item-text-section p {
+    margin: 0 0 11px;   
+    text-align: justify;
+}
+
+.feature-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.home-page-section-three {
+    border-top: 2px solid #84d6f7;
+}
+
+.footer-text {
+    font-size: 14px;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.resetLinkSuccessMessage {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.exportSettingsForm {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+
+.otherExportSettings {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.modalBackdropStyle{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.3);
+    padding: 50;
+    height: 100%;
+    z-index: 1000;
+}
+
+.modalStyle {
+    background: #fff;
+    max-width: 500;
+    height: 250;
+    z-index: 1000;
+    margin: 30 auto;
+    display: block;
+    padding: 20;
+    border-radius: 5px; 
+}
+
+.portalPublishConnetionStatus, .githubIntializationText, .githubPushSuccessText {
+    margin: 85px 15px;
+}
+
+.modalExportPage {
+    display: none;
+}
+
+.home-logo-section {
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.inputNoteMessage {
+    font-size: 10px;
+    margin: 5px 0 0 2px;
+}
+
+.new-sketch-btn {
+    position: relative;
+    top: 30px;
+    margin-bottom: 20px;
+    right: 10px;
+    float: right;
+}
+
+.sketch-list-wrapper {
+    background: white;
+    height: auto;
+    min-height: 100%;
+    width: auto;
+    min-width: 100%;
+}
+
+.header-image-main {
+    width: 549.8px;
+    height: 100px;
+    transform: rotateX(-2deg);
+    margin-top: -50px;
+  }
+
+.text-main1 {
+    width: 100%;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 0.89;
+}
+
+.text-main2 {
+    display: inline-block;
+    width: 100%;    
+    height: 80px;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.text-main-wrapper {
+    margin-left: 130px;
+    margin-top: 80px;
+}
+
+.image-main {
+    width: 700px;
+    margin-left: 125px;
+    margin-top: 30px;
+}
+.github-main{
+  width: 333px;
+  height: 333px;
+  background-color: #ffffff;
+  float: right;
+  margin-top: -300px;
+  margin-right: 20px;
+  border-left: solid 3px #4a90e2;
+}
+.github-container{
+    width: 226px;
+    height: 47px;
+    border-radius: 43.5px;
+    background-color: #4a90e2;
+    margin: 150 auto;
+  }
+  .Sign-up-fee-with-Git {
+    position: relative;
+    z-index: 1;
+    width: 201px;
+    height: 47px;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+  }
+  .No-Github-Sign-up-f {
+    width: 236px;
+    height: 17px;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .signup-wrapper {
+    width: 230px;
+    padding-top: 15px;
+  }
+  
+  .No-Github {
+    width: 236px;
+    height: 17px;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  
+  .No-Github-Sign-up-f {
+    width: 236px;
+    height: 17px;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color:#4a90e2;
+  }
+
+  .signupgit-text {
+      color: #ffffff;
+      margin-left: 25px;
+      padding-top: 13px;
+  }
+
+  .signupgit-image {
+    float: right;
+    margin-top: -35px;    
+    background-color: #000000;
+  }
+
+  .xs-pb-30 {
+      padding-bottom: 30px;
+  }

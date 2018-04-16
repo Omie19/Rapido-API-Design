@@ -1,0 +1,388 @@
+.app-title {
+    font-family: 'Cabin Sketch', cursive;
+    cursor: pointer;
+    padding-left: 15px;
+    a,
+    a:hover {
+        text-decoration: none;
+        color: black;
+    }
+}
+.rapido-header-wrapper {
+    /* padding: 10px 15px 10px 15px;*/
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) !important;
+    background: #ffffff;
+    height: 60px;
+    .sketch-nav-options {
+        padding-top: 10px;
+        .topnav {
+            border-radius: 50% !important;
+            width: 50px;
+            height: 50px;
+        }
+        .topnav.selected {
+            background-color: black;
+            color: white;
+        }
+        .path-active,
+        .path-active:focus {
+            background: black;
+            color: white;
+        }
+    }
+    .user-dropdown-options-arrow {
+        margin-top: 9px;
+        margin-left: -5px;
+        color: #09AEEF;
+        cursor: pointer;
+    }
+    .user-dropdown-options {
+        padding-top: 10px;
+        .dropdown {
+            right: 15px;
+            position: absolute;
+            z-index: 100;
+        }
+        .user-options {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            background: white;
+            width: 100px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            li {
+                padding: 10px 0;
+                cursor: pointer;
+                text-align: center;
+                border-bottom: 1px solid #ccc;
+                a {
+                    padding: 10px;
+                }
+                a:hover {
+                    text-decoration: none;
+                }
+            }
+            li:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+    .user-name {
+        font-size: 14px;
+        padding: 20px 10px;
+        color: #09AEEF;
+    }
+}
+.nav-description {
+  height: 40px;
+  padding: 20px 0 0 0;
+  .options {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+    color: #000;
+  }
+  .options-divider {
+    overflow: hidden;
+    margin-right: 10px;
+    padding: 7px;
+    font-size: 16px;
+    color: #000;
+  }
+}
+
+.logo-text {
+    vertical-align: 8px;
+    margin-left: 15px;
+}
+
+.header-logo-section {
+    color: #20465F;
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+a.header-logo-section {
+  text-decoration: none;
+}
+
+.react-alerts {
+  .content.close {
+    visibility: hidden
+  }
+}
+
+.profileDropdown {
+    position: absolute;
+    top: 15px;
+    right: 10Px;   
+    height: 17px;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.cardLayout {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  clear: both;
+  & > * {
+    flex: 1 1 25%;
+    margin: 1.25em;
+    max-width: 30%;
+    border: none;
+    padding-bottom: 15px;
+  }
+}
+
+.cardButtonSepMargin {
+  margin-left: 20px;
+}
+
+.home-page-section-one-register-button {
+  position: relative;
+  top: -100px;
+}
+
+.profilePageTabsSection, .teamsPageTabsSection {
+  margin: 0;
+  padding: 0 !important;
+  position: relative;
+  text-align: center;
+  background-color: #ebeff5;
+  border-bottom: 1px solid #d6dadc;
+}
+
+.profilePageTab, .teamsPageTab {
+  background: #d6dadc !important;
+  padding: 10px;
+  border: none !important;
+  position: relative;
+  top: 1px;
+  margin-right: 10px !important;
+}
+
+.profilePageTab.active-tab, .teamsPageTab.active-tab {
+  background: white !important;
+}
+
+.profilePageTabMainSection, .teamsPageTabMainSection, .teamDetailsMainSection {
+  margin-top: 30px;
+}
+
+.access-dropdown {
+    height: 41px;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 14px;
+    background: #ebeff5;
+    border-color: #c8d1e0;
+    margin-right: 20px;
+}
+
+.addMembersList {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.projectTeamsList {
+  margin-top: 40px;
+}
+
+.addMembersList, .projectTeamsList{
+  .memberRow, .projectTeamRow {
+    padding: 10px 15px;
+    border-top: 1px solid #ccc;
+    button {
+      float: right;
+      background: none;
+      padding: 2px 10px;
+      font-size: 14px;
+      margin: 0 10px;
+      position: relative;
+      top: -4px;
+    }
+    select {
+      float: right;
+      background: none;
+      height: 24px;
+      margin-right: 20px;
+      font-size: 12PX;
+      POSITION: RELATIVE;
+      TOP: -5PX;
+    }
+  }
+}
+
+.memberRow:last-child, .projectTeamRow:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+
+.memberRow:nth-child(even), .projectTeamRow:nth-child(even) {
+  background: white;
+}
+
+.sketchProjectDisabled {
+  pointer-events: none;
+}
+
+.download-option {
+  margin: 20px 0px;
+}
+
+.addMembersModalCloseBtn, .changeEmailModalCloseBtn {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+
+.addTeamToPrjForm {
+  border-right: 3px solid #ccc;
+  height: 100%;
+  margin-bottom: 0;
+  padding-right: 40px;
+  padding-top: 10px;
+  h3 {
+    font-size: 18px;
+    text-align:center;
+  }
+}
+
+.selected-team {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 3px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.profilePageHeader, .exportPageHeader {
+    margin: 0 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profilePageSeprator {
+    clear: both;
+    border-top: 1px solid #ccc;
+    margin: 0 30px;
+    padding-top: 20px;
+}
+
+.profileLinks {
+    margin: 10px 0;
+    color: #09AEEF;
+    text-decoration: underline;
+    cursor: pointer;
+    float: left;
+    clear: both;
+}
+
+.userDetailsSection, .teamDetailsSection {
+  background: #ebeff5;
+  margin-top: 10px;
+  .mainSection {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    position: relative;
+  }
+  .nameSection {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+
+.header-image {
+  width: 110px;
+  height: 190px;
+  margin-top: -43px;
+  margin-left: -7px;
+  position: absolute;
+  transform: rotateX(25deg);
+}
+
+.header-text {
+    width: 125px;
+    height: 22px;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #eaae4b;
+}
+
+.top-header-tabs {
+    list-style-type: none;
+    margin-left: -10%;
+    float: left;
+}
+
+.top-header-tabs li {
+    float: left;
+    border-left: 1px solid #9b9b9b;
+    height: 60px;
+    width: 100px;
+    padding-top: 21px;
+}
+
+.active-tab {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4a90e2;
+    border-bottom: 5px solid #4a90e2;
+}
+
+.inactive-tab {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4a4a4a;
+    cursor: pointer;
+}
+
+.border-right {
+    border-right: 1px solid #9b9b9b;
+}
+
+.user-img {
+  top: 14px;
+  right: 12px;
+}

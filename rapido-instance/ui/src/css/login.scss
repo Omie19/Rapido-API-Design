@@ -1,0 +1,117 @@
+.form-wrapper {
+  padding-top: 100px;
+  height: 600px;
+  .login-form {
+    padding: 20px 30px 0 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    color: #677B87;
+    h3 {
+      font-size: 16px;
+      font-weight: 200;
+      margin: 20px 0 30px 0;
+    }
+    .form-link {
+      color: #09AEEF;
+      cursor: pointer;
+      font-size: 15px;
+      display: block;
+      margin-bottom: 20px;
+      text-decoration: none;
+    }
+    .password-label {
+      float: left;
+    }
+    .create-label {
+      float: right;
+    }
+    button {
+      background: #09AEEF;
+      border: 2px solid #09AEEF;
+      color: #fff;
+      width: 100%;
+      font-weight: 200;
+    }
+    .logo-color {
+      color: #20465F;
+    }
+  }
+}
+.mail-verification-section, .verification-section {
+  height: 500px;
+  padding-top: 200px;
+  text-align: center;
+  .login-label {
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+.mail-verification-section:hover {
+  cursor: pointer;
+}
+.header-login {
+  height: 80px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  .github-corner:hover .octo-arm {
+    animation:octocat-wave 560ms ease-in-out
+  }
+  @keyframes octocat-wave {
+    0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}
+  }
+  @media (max-width:500px){
+    .github-corner:hover .octo-arm{animation:none}
+    .github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}
+  }
+
+  .github-svg {
+    fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0
+  }
+  .github-svg-path {
+    transform-origin: 130px 106px
+  }
+  .login-button {
+    button {
+      height: 40px;
+      margin-top: 25px;
+      margin-right: 25px;
+    }
+  }
+  .register-button {
+    button {
+      height: 40px;
+      margin-top: 25px;
+      margin-right: 20px;
+    }
+  }
+}
+.registration-wrapper{
+  padding-top: 20px;
+  .registration {
+    padding: 20px 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
+} 
+
+.home-logo-section img {
+    margin-top: 27px;
+    margin-left: 20px;
+}
+
+.github-login-button-section {
+  clear: both;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  button.github {
+    background: #2a2a2a;
+    border-color: #2a2a2a;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTUlEQVR42s1WPS9EQRSdZZNVkLc2CA3RaX0lJEKyhf+wiSA+QqdAIgo/QKNUCJUGITpR+mh0KBQIQSNorCBB9jlX7iaTydzd956RuMmxMnPvuWfmzZ07SgU03/ergGFgNZfLnQIvPhv9T2M0xz5VypWBrBlYAz794PbJMc2/SewBS7RAP7rlmMOLsuor351dBd4NOKbxPZ99x8ac6WLJW/8iuSGiVUpeCYdrI+YM2IwiimM2mUMfpxyVNgErFp4+nktwed0bZbdHMMrynn0THNtn4V0xk7cJC2mxVEYTUGJZQAnPecZ4i8DdpjttCU7tDu6RdoF7K+9QC3wJTgMOBAwI3JSzlhzGhEN0h5+UAwEpcN0KIsYUX5k2G3J4nQ8JOdaUWSba9ngOBXjCZz6jyTfLxI1ybMRpyfOmhK25cC0A5+DSlkgJBzD7BwKyVgHSBKzG4fbXiAvFn2NBQL9DAf2CgGOaXBYEnABxB8njzGWzZXLIFGhqCw4ELBTgz5BDBfBaoK1u/FyZ4RPXcaxklLMi77yoTcwDPcC+NvYBrAOj3DlLha3uBMa5uX0UeTIs6sH1wLv2kJykfo4VHNm6GBCzCIjBfzvge4Vy1ZsEc4ZTB9BoaSRdBba9O6CAOem0HmrffpfHk/zCmQV6bduvcVQHSH4oVhcdNuPKnAh58JJF3omXRQ80HBqoF2hBB/iZBgaBGaAsogDibAjziNgRiJJhBTBXKmwdx4ARBD9EFYDYRy7d2G9usnIuy3MQPuWf24Jvgn3OgSmKVf/dvgFJ8Cp7we0LbwAAAABJRU5ErkJggg==');
+    background-position: 1em;
+    background-repeat: no-repeat;
+    background-size: 1.25em;
+  }
+}

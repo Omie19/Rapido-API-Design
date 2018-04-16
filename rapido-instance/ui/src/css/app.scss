@@ -1,0 +1,232 @@
+.container-fluid {
+    height: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow-x: hidden;
+}
+
+.noscroll {
+    overflow-x: hidden !important;
+}
+
+.main-content {
+    overflow: auto;
+    margin: 0;
+    /*margin-left: 0.7%;*/
+    padding: 0;
+    input.active:invalid {
+        box-shadow: 0 0 5px 1px red;
+    }
+    .error {
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
+
+
+/* Skecthes CSS need to mpve to skecthes file */
+
+.main-content-padding {
+    padding-left: 0px;
+    padding-right: 40px
+}
+
+.xs-pl-35 {
+    padding-left: 35px;
+}
+
+.vocabulary-list {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.vocabulary-list>li {
+    width: 143px;
+    height: 25px;
+    /*text-indent: -20px;*/
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4a4a4a;
+    cursor: pointer;
+    margin-left: -6px;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+
+/*.vocabulary-list>li:before {
+    content: " -  ";
+    text-indent: -5px;
+}*/
+
+.vocabulary-list>li:hover {
+    background-color: #4a90e2;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.vocabulary-text-div {
+    width: 130px;
+    display: inline-block;
+}
+
+.vocabulary-hidden {
+    visibility: hidden;
+}
+
+.vocabulary-list>li:hover .vocabulary-hidden {
+    visibility: visible;
+}
+
+.ace-editor-box {
+    border: 1px solid #ccc;
+    padding: 0;
+}
+
+.sketches-tree {
+    margin-left: 1%;
+}
+
+#nodeContainer {
+    /*width: 300px;*/
+    width: 20%;
+    display: inline-block;
+}
+
+#sidebar {
+    width: 63%;
+    float: left;
+    /* padding-left: 55px;*/
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 700px;
+}
+
+#sidebar:hover {
+    overflow-x: auto;
+    overflow-y: auto
+}
+
+.vocabulary-div {
+    width: 180px;
+    float: left;    
+}
+
+.vocabulary-div-short {
+    width: 55px;
+    float: left;    
+}
+
+.vocabulary-div-panel {
+    width: 180px;
+    float: left;  
+    // display: none;  
+}
+
+.node-button {
+    float: right;
+    padding-right: 5px;
+}
+
+.cursor-drag {
+    background-color: #d8d8d8;
+    width: 5px;
+    height: 100%;
+    display: inline-block;
+    cursor: col-resize;
+    float: left;
+    min-height: 800px;
+}
+
+.xs-pl-28 {
+    padding-left: 28px;
+}
+
+#react-autowhatever-1 {
+    z-index: 12!important
+}
+
+
+/* Toggle CSS */
+
+.switch {
+    position: relative;
+    width: 150px;
+    height: 23px;
+    border-radius: 18px;
+    background-color: #ffffff;
+    border: solid 1px #cfcfcf;
+}
+
+.switch-label {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 70px;
+    height: 23px;
+    cursor: pointer;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: black;
+    line-height: 21px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.switch-label:active {
+    font-weight: normal;
+}
+
+.switch-input {
+    display: none;
+}
+
+.switch-input:checked+.switch-label {
+    width: 78px;
+    height: 23px;
+    border-radius: 18px;
+    background-color: #4a90e2;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 21px;
+    letter-spacing: normal;
+    color: white;
+    -webkit-transition: 0.15s ease-out;
+    -moz-transition: 0.15s ease-out;
+    -ms-transition: 0.15s ease-out;
+    -o-transition: 0.15s ease-out;
+    transition: 0.15s ease-out;
+    -webkit-transition-property: color, text-shadow;
+    -moz-transition-property: color, text-shadow;
+    -ms-transition-property: color, text-shadow;
+    -o-transition-property: color, text-shadow;
+    transition-property: color, text-shadow;
+}
+
+.displayNone {
+    display: none;
+}
+
+.displayBlock {
+    display: block;
+}

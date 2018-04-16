@@ -1,0 +1,108 @@
+.tree-link {
+    fill: none;
+    stroke: #4a90e2;
+    stroke-width: 1px;
+}
+
+.node-uri {
+    cursor: pointer;
+    fill: white;
+    stroke: #cfcfcf;
+    stroke-width: 1px;
+}
+
+.node-uri-activated {
+    cursor: pointer;
+    fill: white;
+    stroke: #3b99fc;
+    stroke-width: 2px;
+}
+
+.node-internal-border {
+    stroke: #cfcfcf;
+    stroke-width: 1px;
+}
+
+.connector-out {
+    cursor: pointer;
+    fill: #4a90e2;
+    /* stroke: black;
+    stroke-width: 2px;*/
+}
+
+.connector-out-disabled {
+    pointer-events: none;
+    fill: white;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.connector-in {
+    fill: #4a90e2;
+}
+
+.node-plus-icon {
+    fill: white
+}
+
+.node-path-text {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.node-full-path-text {
+    font-family: Helvetica;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #cfcfcf;
+}
+
+.badges {
+    font-weight: normal;
+    font-size: 8px;
+    text-shadow: 2px -1px 2 gray;
+    .get {
+        fill: green;
+    }
+    .post {
+        fill: blue;
+    }
+    .put {
+        fill: orange;
+    }
+    .delete {
+        fill: red;
+    }
+    .patch {
+        fill: brown;
+    }
+    .active {
+        fill: #4a90e2;
+    }
+    .activeText {
+        fill: white !important;
+        font-size: 8px;
+    }
+    .inactive {
+        fill: #d6d6d6;
+    }
+    .inactiveText {
+        fill: black !important;
+        font-size: 8px;
+    }
+    text {
+        fill: white;
+        font-size: 8px;
+    }
+}
